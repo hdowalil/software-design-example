@@ -1,6 +1,6 @@
 package info.fivecdesign.gamecollection.portal;
 
-public class AllGamesConsole implements Portal {
+public class AllGamesConsole  {
 
 	public static void main(String[] args) {
 		
