@@ -1,0 +1,16 @@
+{"cities":[
+    {"city": "Sydney", "diff": "EASY", "ctr": "AUS", "ll": "-33.873651,151.2068896"}
+,{"city": "Melbourne", "diff": "EASY", "ctr": "AUS", "ll": "-37.8131869,144.9629796"}
+,{"city": "Brisbane", "diff": "EASY", "ctr": "AUS", "ll": "-27.4709331,153.0235024"}
+,{"city": "Perth", "diff": "EASY", "ctr": "AUS", "ll": "-31.9528536,115.8573389"}
+,{"city": "Adelaide", "diff": "EASY", "ctr": "AUS", "ll": "-34.9287264,138.5999453"}
+,{"city": "Canberra", "diff": "EASY", "ctr": "AUS", "ll": "-35.3499749,149.2093688"}
+,{"city": "Hobart", "diff": "MEDIUM", "ctr": "AUS", "ll": "-42.8308532,147.3746212"}
+,{"city": "Cairns", "diff": "MEDIUM", "ctr": "AUS", "ll": "-16.9233991,145.773851"}
+,{"city": "Darwin", "diff": "MEDIUM", "ctr": "AUS", "ll": "-12.4628198,130.8417694"}
+    ,{"city": "Alice Springs", "diff": "MEDIUM", "ctr": "AUS", "ll": "-23.6974800,133.8836200"}
+   ,{"city": "Auckland", "diff": "EASY", "ctr": "NZL", "ll": "-36.8484597,174.7633315"}
+,{"city": "Wellington", "diff": "MEDIUM", "ctr": "NZL", "ll": "-41.2864603,174.776236"}
+,{"city": "Christchurch", "diff": "MEDIUM", "ctr": "NZL", "ll": "-43.5320544,172.6362254"}
+,{"city": "Papeete", "diff": "EASY", "ctr": "PYF", "ll": "-17.32,-149.34"}
+]}

@@ -1,0 +1,36 @@
+{"cities":[
+  {"city": "Novosibirsk", "diff": "MEDIUM", "ctr": "RUS", "ll": "55.0333333,82.9166667"}
+,{"city": "Yekaterinburg", "diff": "MEDIUM", "ctr": "RUS", "ll": "56.84999999999999,60.59999999999999"}
+,{"city": "Omsk", "diff": "MEDIUM", "ctr": "RUS", "ll": "54.9833333,73.3666667"}
+,{"city": "Ankara", "diff": "EASY", "ctr": "TUR", "ll": "39.55,32.55"}
+,{"city": "Bangkok", "diff": "EASY", "ctr": "THA", "ll": "13.45,100.3"}
+,{"city": "Beijing", "diff": "EASY", "ctr": "CHN", "ll": "39.55,116.25"}
+,{"city": "Shanghai", "diff": "EASY", "ctr": "CHN", "ll": "31.06,121.22"}
+,{"city": "Bombay", "diff": "EASY", "ctr": "IND", "ll": "19.0,72.48"}
+,{"city": "Hong Kong", "diff": "EASY", "ctr": "CHN", "ll": "22.2,114.11"}
+,{"city": "Jakarta", "diff": "EASY", "ctr": "IDN", "ll": "-6.16,106.48"}
+,{"city": "Kuala Lumpur", "diff": "EASY", "ctr": "MYS", "ll": "3.8,101.42"}
+,{"city": "Manila", "diff": "EASY", "ctr": "PHL", "ll": "14.35,120.57"}
+,{"city": "Mecca,Mekka", "diff": "EASY", "ctr": "SAU", "ll": "21.29,39.45"}
+,{"city": "New Delhi,Neu Delhi", "diff": "EASY", "ctr": "IND", "ll": "28.35,77.12"}
+,{"city": "Port Moresby", "diff": "MEDIUM", "ctr": "PNG", "ll": "-9.25,147.8"}
+,{"city": "Kabul", "diff": "MEDIUM", "ctr": "AFG", "ll": "34.31,69.12"}
+,{"city": "Phnom Penh", "diff": "MEDIUM", "ctr": "KHM", "ll": "11.33,104.55"}
+,{"city": "Bandar Seri Begawan", "diff": "MEDIUM", "ctr": "AFG", "ll": "4.53,114.56"}
+,{"city": "Taipeh", "diff": "MEDIUM", "ctr": "TWN", "ll": "25.05,121.32"}
+,{"city": "Tehran,Teheran", "diff": "MEDIUM", "ctr": "IRN", "ll": "35.40,51.26"}
+,{"city": "Baghdad", "diff": "EASY", "ctr": "IRQ", "ll": "33.20,44.26"}
+,{"city": "Tel Aviv", "diff": "EASY", "ctr": "ISR", "ll": "32.5,34.48"}
+,{"city": "Tokyo", "diff": "EASY", "ctr": "JPN", "ll": "35.40,139.45"}
+,{"city": "Amman", "diff": "MEDIUM", "ctr": "JOR", "ll": "31.57,35.56"}
+,{"city": "Seoul", "diff": "EASY", "ctr": "KOR", "ll": "37.30,127.00"}
+,{"city": "Malé", "diff": "MEDIUM", "ctr": "MDV", "ll": "4.00,73.28"}
+,{"city": "Pyongyang", "diff": "MEDIUM", "ctr": "PRK", "ll": "39.00,125.47"}
+,{"city": "Muscat", "diff": "MEDIUM", "ctr": "OMN", "ll": "23.37,58.38"}
+,{"city": "Islamabad", "diff": "MEDIUM", "ctr": "PAK", "ll": "33.40,73.08"}
+,{"city": "Doha", "diff": "MEDIUM", "ctr": "QAT", "ll": "25.15,51.36"}
+,{"city": "Singapore,Singapur", "diff": "EASY", "ctr": "SGP", "ll": "1.18,103.50"}
+,{"city": "Colombo", "diff": "MEDIUM", "ctr": "LKA", "ll": "6.55,79.52"}
+,{"city": "Abu Dhabi", "diff": "MEDIUM", "ctr": "ARE", "ll": "24.28,54.22"}
+,{"city": "Hanoi", "diff": "EASY", "ctr": "VNM", "ll": "21.01,105.52"}
+]}

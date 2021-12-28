@@ -1,0 +1,24 @@
+{"cities":[
+    {"city": "Algiers", "diff": "MEDIUM", "ctr": "DZA", "ll": "36.50,3.00"}
+,{"city": "Bujumbura", "diff": "MEDIUM", "ctr": "BDI", "ll": "-3.22,29.19"}
+,{"city": "Bangui", "diff": "MEDIUM", "ctr": "CAF", "ll": "4.23,18.37"}
+,{"city": "Djibouti", "diff": "MEDIUM", "ctr": "DJI", "ll": "11.33,43.10"}
+,{"city": "Cairo,Kairo", "diff": "EASY", "ctr": "EGY", "ll": "30.03,31.15"}
+,{"city": "Malabo", "diff": "MEDIUM", "ctr": "GNQ", "ll": "3.45,8.48"}
+,{"city": "Asmara", "diff": "MEDIUM", "ctr": "ERI", "ll": "15.20,38.58"}
+,{"city": "Addis Ababa,Addis Abeba", "diff": "EASY", "ctr": "ETH", "ll": "9.03,38.42"}
+,{"city": "Banjul", "diff": "MEDIUM", "ctr": "GMB", "ll": "13.28,-16.39"}
+,{"city": "Accra", "diff": "MEDIUM", "ctr": "GHA", "ll": "5.33,-0.15"}
+    ,{"city": "Maseru", "diff": "MEDIUM", "ctr": "LSO", "ll": "-29.19,27.29"}
+   ,{"city": "Tripoli,Tripolis", "diff": "EASY", "ctr": "LBY", "ll": "32.54,13.11"}
+,{"city": "Antananarivo", "diff": "MEDIUM", "ctr": "MDG", "ll": "-18.52,47.30"}
+,{"city": "Timbuktu", "diff": "MEDIUM", "ctr": "MLI", "ll": "16.49,-2.59"}
+,{"city": "Windhoek", "diff": "MEDIUM", "ctr": "NAM", "ll": "-22.34,17.06"}
+,{"city": "Maputo", "diff": "MEDIUM", "ctr": "MOZ", "ll": "-25.58,32.35"}
+,{"city": "Casablanca", "diff": "EASY", "ctr": "MAR", "ll": "33.36,-7.36"}
+,{"city": "Lagos", "diff": "MEDIUM", "ctr": "NGA", "ll": "6.27,3.24"}
+,{"city": "Brazzaville", "diff": "MEDIUM", "ctr": "COG", "ll": "4.14,15.14"}
+,{"city": "Dakar", "diff": "MEDIUM", "ctr": "SEN", "ll": "14.40,-17.26"}
+,{"city": "Cape Town", "diff": "EASY", "ctr": "ZAF", "ll": "-35.55,18.22"}
+,{"city": "Johannesburg", "diff": "EASY", "ctr": "ZAF", "ll": "-26.08,27.54"}
+,{"city": "Dar es Salaam", "diff": "MEDIUM", "ctr": "TZA", "ll": "-26.08,27.54"}]}

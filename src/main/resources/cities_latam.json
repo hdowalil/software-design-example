@@ -1,0 +1,12 @@
+{"cities":[
+    {"city": "Sao Paulo", "diff": "EASY", "ctr": "BRA", "ll": "-23.5489433,-46.6388182"}
+,{"city": "Rio de Janeiro", "diff": "EASY", "ctr": "BRA", "ll": "-22.9035393,-43.2095869"}
+,{"city": "Brasília", "diff": "EASY", "ctr": "BRA", "ll": "-15.7801482,-47.9291698"}
+,{"city": "Manaus", "diff": "MEDIUM", "ctr": "BRA", "ll": "-3.1064093,-60.02642969999999"}
+,{"city": "Buenos Aires", "diff": "EASY", "ctr": "ARG", "ll": "-34.4,-58.3"}
+,{"city": "Santiago de Chile", "diff": "EASY", "ctr": "CHL", "ll": "-33.27,-70.4"}
+,{"city": "Bogotá", "diff": "EASY", "ctr": "COL", "ll": "4.36,-74.05"}
+,{"city": "Lima", "diff": "EASY", "ctr": "PER", "ll": "-12.03,-77.03"}
+,{"city": "Montevideo", "diff": "MEDIUM", "ctr": "URY", "ll": "-34.53,-56.11"}
+,{"city": "Caracas", "diff": "EASY", "ctr": "VEN", "ll": "10.3,-66.56"}
+]}

@@ -1,0 +1,48 @@
+{"cities":[
+    {"city": "Torontoa", "diff": "EASY", "ctr": "CAN", "ll": "43.653226,-79.3831843"}
+,{"city": "Montreal", "diff": "EASY", "ctr": "CAN", "ll": "45.5086699,-73.55399249999999"}
+,{"city": "Vancouver", "diff": "EASY", "ctr": "CAN", "ll": "49.261226,-123.1139268"}
+,{"city": "Ottawa", "diff": "MEDIUM", "ctr": "CAN", "ll": "45.4215296,-75.69719309999999"}
+,{"city": "Edmonton", "diff": "MEDIUM", "ctr": "CAN", "ll": "53.543564,-113.490452"}
+,{"city": "Calgary", "diff": "EASY", "ctr": "CAN", "ll": "51.04499999999999,-114.0572222"}
+,{"city": "Quebec", "diff": "EASY", "ctr": "CAN", "ll": "52.9399159,-73.5491361"}
+,{"city": "Winnipeg", "diff": "MEDIUM", "ctr": "CAN", "ll": "49.8997541,-97.1374937"}
+
+,{"city": "Mexico City", "diff": "EASY", "ctr": "MEX", "ll": "19.4326077,-99.133208"}
+,{"city": "Tijuana", "diff": "MEDIUM", "ctr": "MEX", "ll": "32.533489,-117.018204"}
+,{"city": "Guadalajara", "diff": "MEDIUM", "ctr": "MEX", "ll": "20.67359,-103.343803"}
+,{"city": "Mérida", "diff": "MEDIUM", "ctr": "MEX", "ll": "20.97,-89.62"}
+,{"city": "Acapulco", "diff": "MEDIUM", "ctr": "MEX", "ll": "16.863794,-99.881614"}
+,{"city": "Cancún", "diff": "MEDIUM", "ctr": "MEX", "ll": "21.158964,-86.84593699999999"}
+
+,{"city": "New York", "diff": "EASY", "ctr": "USA", "ll": "40.7143528,-74.00597309999999"}
+,{"city": "Los Angeles", "diff": "EASY", "ctr": "USA", "ll": "34.0522342,-118.2436849"}
+,{"city": "Chicago", "diff": "EASY", "ctr": "USA", "ll": "41.8781136,-87.6297982"}
+,{"city": "Houston", "diff": "MEDIUM", "ctr": "USA", "ll": "29.7601927,-95.36938959999999"}
+,{"city": "Philadelphia", "diff": "EASY", "ctr": "USA", "ll": "39.952335,-75.16378900000001"}
+,{"city": "Phoenix", "diff": "MEDIUM", "ctr": "USA", "ll": "33.4483771,-112.0740373"}
+,{"city": "San Diego", "diff": "EASY", "ctr": "USA", "ll": "32.7153292,-117.1572551"}
+,{"city": "Dallas", "diff": "EASY", "ctr": "USA", "ll": "32.802955,-96.769923"}
+,{"city": "Indianapolis", "diff": "MEDIUM", "ctr": "USA", "ll": "39.7685155,-86.1580736"}
+,{"city": "San Francisco", "diff": "EASY", "ctr": "USA", "ll": "37.7749295,-122.4194155"}
+,{"city": "Austin", "diff": "MEDIUM", "ctr": "USA", "ll": "30.267153,-97.7430608"}
+,{"city": "Detroit", "diff": "EASY", "ctr": "USA", "ll": "42.331427,-83.0457538"}
+,{"city": "Memphis", "diff": "MEDIUM", "ctr": "USA", "ll": "35.1495343,-90.0489801"}
+,{"city": "Boston", "diff": "EASY", "ctr": "USA", "ll": "42.3584308,-71.0597732"}
+,{"city": "Seattle", "diff": "EASY", "ctr": "USA", "ll": "47.6062095,-122.3320708"}
+,{"city": "Washington DC", "diff": "EASY", "ctr": "USA", "ll": "38.8951118,-77.0363658"}
+,{"city": "Denver", "diff": "EASY", "ctr": "USA", "ll": "39.7391536,-104.9847034"}
+,{"city": "Las Vegas", "diff": "EASY", "ctr": "USA", "ll": "36.114646,-115.172816"}
+,{"city": "Albuquerque", "diff": "MEDIUM", "ctr": "USA", "ll": "35.0844909,-106.6511367"}
+,{"city": "Tucson", "diff": "MEDIUM", "ctr": "USA", "ll": "32.2217429,-110.926479"}
+,{"city": "Sacramento", "diff": "MEDIUM", "ctr": "USA", "ll": "38.5815719,-121.4943996"}
+,{"city": "Kansas City", "diff": "MEDIUM", "ctr": "USA", "ll": "39.0997265,-94.5785667"}
+,{"city": "Atlanta", "diff": "MEDIUM", "ctr": "USA", "ll": "33.7489954,-84.3879824"}
+,{"city": "Miami", "diff": "EASY", "ctr": "USA", "ll": "25.7889689,-80.2264393"}
+,{"city": "New Orleans", "diff": "EASY", "ctr": "USA", "ll": "29.95106579999999,-90.0715323"}
+,{"city": "Honolulu", "diff": "EASY", "ctr": "USA", "ll": "21.3069444,-157.8583333"}
+,{"city": "Pittsburgh", "diff": "MEDIUM", "ctr": "USA", "ll": "40.44062479999999,-79.9958864"}
+,{"city": "Anchorage", "diff": "MEDIUM", "ctr": "USA", "ll": "61.2180556,-149.9002778"}
+,{"city": "Fort Lauderdale", "diff": "MEDIUM", "ctr": "USA", "ll": "26.1223084,-80.14337859999999"}
+,{"city": "Kansas City", "diff": "MEDIUM", "ctr": "USA", "ll": "39.0653602,-94.5624426"}
+]}

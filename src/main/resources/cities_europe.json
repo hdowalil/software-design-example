@@ -1,0 +1,67 @@
+{"cities":[
+    {"city": "Moscow,Moskau", "diff": "EASY", "ctr": "RUS", "ll": "55.75,37.6166667"}
+,{"city": "London", "diff": "EASY", "ctr": "GBR", "ll": "51.5081289,-0.128005"}
+,{"city": "St. Petersburg", "diff": "EASY", "ctr": "RUS", "ll": "60.07623830000001,30.1213829"}
+,{"city": "Berlin", "diff": "EASY", "ctr": "DEU", "ll": "52.524268,13.40629"}
+,{"city": "Madrid", "diff": "EASY", "ctr": "ESP", "ll": "40.4166909,-3.700345399999999"}
+,{"city": "Rome,Rom", "diff": "EASY", "ctr": "ITA", "ll": "41.8905198,12.4942486"}
+,{"city": "Kiev,Kiew", "diff": "EASY", "ctr": "UKR", "ll": "50.4501,30.5234"}
+,{"city": "Paris", "diff": "EASY", "ctr": "FRA", "ll": "48.856614,2.3522219"}
+,{"city": "Bucharest,Bukarest", "diff": "EASY", "ctr": "ROU", "ll": "44.43771100000001,26.0973669"}
+,{"city": "Budapest", "diff": "EASY", "ctr": "HUN", "ll": "47.4984056,19.0407578"}
+,{"city": "Hamburg", "diff": "EASY", "ctr": "DEU", "ll": "53.556866,9.994622"}
+,{"city": "Minsk", "diff": "EASY", "ctr": "BLR", "ll": "53.9,27.5666667"}
+,{"city": "Warsaw,Warschau", "diff": "EASY", "ctr": "POL", "ll": "52.2296756,21.0122287"}
+,{"city": "Belgrade,Belgrad", "diff": "EASY", "ctr": "SRB", "ll": "44.802416,20.465601"}
+,{"city": "Vienna,Wien", "diff": "EASY", "ctr": "AUT", "ll": "48.2081743,16.3738189"}
+,{"city": "Kharkiv,Charkiw", "diff": "EASY", "ctr": "UKR", "ll": "49.9935,36.230383"}
+,{"city": "Barcelona", "diff": "EASY", "ctr": "ESP", "ll": "41.387917,2.1699187"}
+,{"city": "Milan,Mailand", "diff": "EASY", "ctr": "ITA", "ll": "45.463681,9.1881714"}
+,{"city": "Munich,München", "diff": "EASY", "ctr": "DEU", "ll": "48.1448353,11.5580067"}
+,{"city": "Prague,Prag", "diff": "EASY", "ctr": "CZE", "ll": "50.0878114,14.4204598"}
+,{"city": "Sofia", "diff": "EASY", "ctr": "BGR", "ll": "42.6964917,23.3260106"}
+,{"city": "Dnipropetrovs'k", "diff": "MEDIUM", "ctr": "RUS", "ll": "48.464717,35.046183"}
+,{"city": "Naples,Neapel", "diff": "MEDIUM", "ctr": "ITA", "ll": "40.8399833,14.2525421"}
+,{"city": "Birmingham", "diff": "MEDIUM", "ctr": "GBR", "ll": "52.48624299999999,-1.890401"}
+,{"city": "Odesa,Odessa", "diff": "MEDIUM", "ctr": "UKR", "ll": "46.484583,30.7326"}
+,{"city": "Cologne,Köln", "diff": "MEDIUM", "ctr": "DEU", "ll": "50.9580867,6.9204493"}
+,{"city": "Turin", "diff": "MEDIUM", "ctr": "ITA", "ll": "45.0708515,7.6843404"}
+,{"city": "Zagreb", "diff": "MEDIUM", "ctr": "HRV", "ll": "45.814912,15.9785145"}
+,{"city": "Marseille", "diff": "MEDIUM", "ctr": "FRA", "ll": "43.296482,5.36978"}
+,{"city": "Riga", "diff": "MEDIUM", "ctr": "LVA", "ll": "56.9462031,24.1042872"}
+,{"city": "Athens,Athen", "diff": "EASY", "ctr": "GRC", "ll": "37.9753357,23.7361497"}
+,{"city": "Stockholm", "diff": "MEDIUM", "ctr": "SWE", "ll": "59.32893000000001,18.06491"}
+,{"city": "Kraków,Krakau", "diff": "MEDIUM", "ctr": "POL", "ll": "50.06465009999999,19.9449799"}
+,{"city": "Valencia", "diff": "MEDIUM", "ctr": "ESP", "ll": "39.4702393,-0.3768049"}
+,{"city": "Amsterdam", "diff": "EASY", "ctr": "NLD", "ll": "52.3702157,4.895167900000001"}
+,{"city": "Seville,Sevilla", "diff": "MEDIUM", "ctr": "ESP", "ll": "37.38263999999999,-5.996295099999999"}
+,{"city": "Palermo", "diff": "MEDIUM", "ctr": "ESP", "ll": "38.11564,13.3614059"}
+,{"city": "Chisinau", "diff": "MEDIUM", "ctr": "MDA", "ll": "47.02685899999999,28.841551"}
+,{"city": "Genoa,Genua", "diff": "MEDIUM", "ctr": "ITA", "ll": "44.4070624,8.9339889"}
+,{"city": "Frankfurt", "diff": "MEDIUM", "ctr": "DEU", "ll": "50.1109221,8.6821267"}
+,{"city": "Glasgow", "diff": "EASY", "ctr": "GBR", "ll": "55.864237,-4.251806"}
+,{"city": "Saragossa", "diff": "MEDIUM", "ctr": "ESP", "ll": "41.6562873,-0.8765379000000001"}
+,{"city": "Rotterdam", "diff": "MEDIUM", "ctr": "NLD", "ll": "51.92421599999999,4.481776"}
+,{"city": "Vilnius", "diff": "MEDIUM", "ctr": "LTU", "ll": "54.6893865,25.2800243"}
+,{"city": "Lisbon,Lissabon", "diff": "EASY", "ctr": "PRT", "ll": "38.70693199999999,-9.135632099999999"}
+,{"city": "Helsinki, Finland", "diff": "EASY", "ctr": "FIN", "ll": "60.169845,24.9385508"}
+,{"city": "Malaga", "diff": "MEDIUM", "ctr": "ESP", "ll": "36.7196484,-4.420016299999999"}
+,{"city": "Sarajevo", "diff": "MEDIUM", "ctr": "BIH", "ll": "43.8476,18.3564"}
+,{"city": "Oslo", "diff": "EASY", "ctr": "NOR", "ll": "59.9138688,10.7522454"}
+,{"city": "Copenhagen,Kopenhagen", "diff": "EASY", "ctr": "DNK", "ll": "55.6760968,12.5683371"}
+,{"city": "Dublin", "diff": "EASY", "ctr": "IRL", "ll": "53.34410399999999,-6.267493699999999"}
+,{"city": "Liverpool", "diff": "EASY", "ctr": "GBR", "ll": "53.41154,-2.990116"}
+,{"city": "Edinburgh", "diff": "EASY", "ctr": "GBR", "ll": "55.953252,-3.188267"}
+,{"city": "Bratislava, Slovakia", "diff": "MEDIUM", "ctr": "SVK", "ll": "48.1462386,17.1072618"}
+,{"city": "Kaliningrad", "diff": "MEDIUM", "ctr": "RUS", "ll": "54.7,20.5"}
+,{"city": "Tallinn", "diff": "MEDIUM", "ctr": "EST", "ll": "59.4426896,24.7531972"}
+,{"city": "Lyon", "diff": "MEDIUM", "ctr": "FRA", "ll": "45.764043,4.835659"}
+,{"city": "Florence,Florenz", "diff": "MEDIUM", "ctr": "ITA", "ll": "43.7687324,11.2569013"}
+,{"city": "Nice,Nizza", "diff": "MEDIUM", "ctr": "FRA", "ll": "43.696036,7.265592"}
+,{"city": "Sochi,Sotschi", "diff": "MEDIUM", "ctr": "RUS", "ll": "43.4395848,39.9277252"}
+,{"city": "Cluj-Napoca", "diff": "MEDIUM", "ctr": "ROU", "ll": "46.777248,23.5998899"}
+,{"city": "Venice,Venedig", "diff": "MEDIUM", "ctr": "ITA", "ll": "45.4343363,12.3387844"}
+,{"city": "Belfast", "diff": "EASY", "ctr": "GBR", "ll": "54.59744329999999,-5.9340683"}
+,{"city": "Ljubljana", "diff": "MEDIUM", "ctr": "SVN", "ll": "46.0514263,14.5059655"}
+,{"city": "Tirana", "diff": "MEDIUM", "ctr": "ALB", "ll": "41.326,19.816"}
+]}
