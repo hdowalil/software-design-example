@@ -7,9 +7,6 @@ import java.util.Set;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Country;
 
-/**
- * Created by Herbert on 29.07.2015.
- */
 public class CountrySelector  {
 
     private Difficulty difficulty;

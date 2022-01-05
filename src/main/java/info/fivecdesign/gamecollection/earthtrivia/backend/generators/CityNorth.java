@@ -64,6 +64,8 @@ public class CityNorth implements Generator {
         Collections.sort(cityBylats, new CityLatComparator());
 
         double diff = cityBylats.get(3).getLatCoordinate() - cityBylats.get(2).getLatCoordinate();
+        
+        // far enough and not too close
         if (diff  > 2d && diff < 12d) {
             return cityBylats;
         } else {

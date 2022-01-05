@@ -99,4 +99,11 @@ public class City {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
+
+	@Override
+	public String toString() {
+		return "City [city=" + city + ", cityDe=" + cityDe + ", diff=" + diff + ", ctr=" + ctr + ", ll=" + ll
+				+ ", latCoordinate=" + latCoordinate + ", longCoordinate=" + longCoordinate + "]";
+	}
+    
 }

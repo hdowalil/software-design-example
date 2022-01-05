@@ -9,6 +9,7 @@ import java.util.Random;
 import javax.annotation.Nonnull;
 
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Capital;
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.CityDistance;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.CityNorth;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.DidntMakeItException;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
@@ -64,12 +65,13 @@ public class TriviaGenerator {
     }
 
     public Question generateQuestion(Difficulty diff, Random rnd) {
-        int questionType = rnd.nextInt(3);
+        int questionType = rnd.nextInt(4);
         Generator questionGenerator = null;
         switch (questionType) {
             case 0: questionGenerator = new Capital(diff, resources.getCountries(),rnd); break;
             case 1: questionGenerator = new NeighboringCountry(diff, resources.getCountries(),rnd); break;
             case 2: questionGenerator = new CityNorth(diff, resources.getCitiesContinents(), resources.getCountries(),rnd); break;
+            case 3: questionGenerator = new CityDistance(diff, resources.getCitiesContinents(), rnd); break;
         }
         return questionGenerator.generate();
     }

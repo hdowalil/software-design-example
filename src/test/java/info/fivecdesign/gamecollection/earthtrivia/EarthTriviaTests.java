@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import com.google.gson.Gson;
 
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.CityDistancePair;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Questions;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaGenerator;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaResources;
@@ -17,7 +18,17 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaResources;
 class EarthTriviaTests {
 
 	@Test
-	void test() throws IOException, ParseException {
+	void testDistance() {
+		
+        int adelaideToAliceSprings = CityDistancePair.calculateDistance(34.55,138.53,23.42,133.53);
+        Assertions.assertEquals(1329, adelaideToAliceSprings, "Adelaide to Alice should be 1329!");
+        
+        int viennaToLisbon = CityDistancePair.calculateDistance(48.12,16.22,38.44,-9.08);
+        Assertions.assertEquals(2299, viennaToLisbon, "Vienna to Lisbon should be 2299!");
+	}
+	
+	@Test
+	void testQuestions() throws IOException, ParseException {
 
 		TriviaResources resources = new TriviaResources();
 
