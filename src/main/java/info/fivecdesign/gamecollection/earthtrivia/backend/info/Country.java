@@ -2,9 +2,6 @@ package info.fivecdesign.gamecollection.earthtrivia.backend.info;
 
 import java.util.Arrays;
 
-/**
- * Created by Herbert on 27.07.2015.
- */
 public class Country {
 
     String name;

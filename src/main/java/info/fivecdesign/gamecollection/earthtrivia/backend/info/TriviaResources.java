@@ -8,9 +8,6 @@ import java.io.Writer;
 
 import com.google.gson.Gson;
 
-/**
- * Created by Herbert on 24.08.2015.
- */
 public class TriviaResources {
     Countries countries;
     CitiesContinents citiesContinents = new CitiesContinents();

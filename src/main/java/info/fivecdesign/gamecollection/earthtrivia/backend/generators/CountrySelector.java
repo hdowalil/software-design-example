@@ -81,6 +81,7 @@ public class CountrySelector  {
     }
 
     public Country next() {
+    	
         if (alreadySelectedIntegers == null) {
             alreadySelectedIntegers = new HashSet<Integer>(4);
         }

@@ -5,6 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import com.google.gson.Gson;
@@ -29,39 +30,20 @@ class EarthTriviaTests {
 		TriviaGenerator generator = new TriviaGenerator(resources);
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-		Date datum = sdf.parse("20120801");
+		Date datum = sdf.parse("20121209");
 		Gson gson = new Gson();
 
 		for (int i = 0; i < 31; i++) {
 			Questions q = generator.generateQuestionsFor(datum);
+			Assertions.assertTrue(q.getEasy() != null && q.getEasy().size() > 0, "There should be Easy questions");
+			Assertions.assertTrue(q.getMedium()!= null && q.getMedium().size() > 0, "There should be Medium questions");
+			Assertions.assertTrue(q.getHard() != null && q.getHard().size() > 0, "There should be Hard questions");
+			
 			System.out.println(gson.toJson(q));
+			
+			// forward to next day
 			datum = new Date(datum.getTime() + 86400000L);
 		}
 	}
-
-	public static void main(String[] args) throws IOException, ParseException {
-		
-		EarthTriviaTests tests = new EarthTriviaTests();
-		tests.test();
-		
-	}
-	
-//	static String readFile(String fileName) throws IOException {
-//		BufferedReader br = new BufferedReader(new InputStreamReader(
-//				new FileInputStream("C:\\wsAndroid\\WorldTrivia\\app\\src\\main\\res\\raw\\" + fileName), "UTF8"));
-//		try {
-//			StringBuilder sb = new StringBuilder();
-//			String line = br.readLine();
-//
-//			while (line != null) {
-//				sb.append(line);
-//				sb.append("\n");
-//				line = br.readLine();
-//			}
-//			return sb.toString();
-//		} finally {
-//			br.close();
-//		}
-//	}
 
 }

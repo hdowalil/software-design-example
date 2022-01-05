@@ -1,8 +1,5 @@
 package info.fivecdesign.gamecollection.earthtrivia.backend.info;
 
-/**
- * Created by Herbert on 24.08.2015.
- */
 public class CitiesContinents {
 
     Cities citiesAfrica;

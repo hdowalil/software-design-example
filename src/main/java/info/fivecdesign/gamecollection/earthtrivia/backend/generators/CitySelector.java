@@ -6,9 +6,6 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.info.Cities;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.CitiesContinents;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.City;
 
-/**
- * Created by Herbert on 24.08.2015.
- */
 public class CitySelector {
 
     // easy ... only easy cities from one continent, medium ... medium and easy cities from one continent, hard ... medium and easy from all continents

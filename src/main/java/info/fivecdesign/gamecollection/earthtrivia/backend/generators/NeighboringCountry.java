@@ -5,14 +5,11 @@ import java.util.Random;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Country;
 
-/**
- * Created by Herbert on 27.07.2015.
- */
-public class Nachbarland implements Generator {
+public class NeighboringCountry implements Generator {
 
    CountrySelector selector;
 
-    public Nachbarland(Difficulty difficulty, Countries countries, Random rnd) {
+    public NeighboringCountry(Difficulty difficulty, Countries countries, Random rnd) {
         selector = new CountrySelector(difficulty,rnd,countries,false);
     }
 
@@ -24,7 +21,7 @@ public class Nachbarland implements Generator {
         } while (firstCountry.getBorders() == null || firstCountry.getBorders().length == 0);
 
         Question result = new Question();
-        result.setQuestion("Welches dieser Länder ist ein Nachbarland von " + firstCountry.getName());
+        result.setQuestion("Which of these countries is a neighboring country of " + firstCountry.getName());
 
         int selectedCountry = selector.nextInt(firstCountry.getBorders().length);
         Country neighbour = selector.getByAlpha3Code(firstCountry.getBorders()[selectedCountry]);

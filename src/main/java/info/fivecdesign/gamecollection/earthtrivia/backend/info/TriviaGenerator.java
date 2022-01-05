@@ -6,15 +6,16 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import javax.annotation.Nonnull;
+
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Capital;
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.CityNorth;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.DidntMakeItException;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Generator;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Hauptstadt;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Nachbarland;
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.NeighboringCountry;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Question;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Questions;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.StadtNoerdlicher;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.VonWoHauptstadt;
 
 /**
  * Created by Herbert on 27.07.2015.
@@ -36,7 +37,7 @@ public class TriviaGenerator {
         return result;
     }
 
-    public List<Question> generateQuestionsFor(Difficulty diff, Date datum) {
+    public List<Question> generateQuestionsFor(@Nonnull Difficulty diff, @Nonnull Date datum) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
         String rndInput = sdf.format(datum);
         if (Difficulty.HARD.equals(diff)) {
@@ -63,13 +64,12 @@ public class TriviaGenerator {
     }
 
     public Question generateQuestion(Difficulty diff, Random rnd) {
-        int questionType = rnd.nextInt(4);
+        int questionType = rnd.nextInt(3);
         Generator questionGenerator = null;
         switch (questionType) {
-            case 0: questionGenerator = new Hauptstadt(diff, resources.getCountries(),rnd); break;
-            case 1: questionGenerator = new VonWoHauptstadt(diff, resources.getCountries(),rnd); break;
-            case 2: questionGenerator = new Nachbarland(diff, resources.getCountries(),rnd); break;
-            case 3: questionGenerator = new StadtNoerdlicher(diff, resources.getCitiesContinents(), resources.getCountries(),rnd); break;
+            case 0: questionGenerator = new Capital(diff, resources.getCountries(),rnd); break;
+            case 1: questionGenerator = new NeighboringCountry(diff, resources.getCountries(),rnd); break;
+            case 2: questionGenerator = new CityNorth(diff, resources.getCitiesContinents(), resources.getCountries(),rnd); break;
         }
         return questionGenerator.generate();
     }

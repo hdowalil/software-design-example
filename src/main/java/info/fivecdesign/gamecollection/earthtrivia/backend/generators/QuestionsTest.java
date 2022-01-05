@@ -13,9 +13,6 @@ import com.google.gson.Gson;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaGenerator;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaResources;
 
-/**
- * Created by Herbert on 24.08.2015.
- */
 public class QuestionsTest {
 
     public static void main(String[] args) throws IOException,ParseException {

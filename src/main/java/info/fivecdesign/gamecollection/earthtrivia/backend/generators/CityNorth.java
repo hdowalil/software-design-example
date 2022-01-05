@@ -14,12 +14,12 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 /**
  * Created by Herbert on 27.07.2015.
  */
-public class StadtNoerdlicher implements Generator {
+public class CityNorth implements Generator {
 
     CitySelector cities = null;
     CountrySelector countries = null;
 
-    public StadtNoerdlicher(Difficulty difficulty, CitiesContinents cities, Countries countries, Random rnd) {
+    public CityNorth(Difficulty difficulty, CitiesContinents cities, Countries countries, Random rnd) {
         this.countries = new CountrySelector(difficulty,rnd,countries);
         this.cities = new CitySelector(difficulty,rnd,cities);
     }
@@ -49,11 +49,11 @@ public class StadtNoerdlicher implements Generator {
 
             Question result = new Question();
 
-            result.setQuestion("Welche dieser Städte liegt am nördlichsten?");
-            result.addAnswer(cityByLats.get(3).getCityDe());
-            result.addAnswer(cityByLats.get(2).getCityDe());
-            result.addAnswer(cityByLats.get(1).getCityDe());
-            result.addAnswer(cityByLats.get(0).getCityDe());
+            result.setQuestion("Which of these cities is the northernmost?");
+            result.addAnswer(cityByLats.get(3).getCity());
+            result.addAnswer(cityByLats.get(2).getCity());
+            result.addAnswer(cityByLats.get(1).getCity());
+            result.addAnswer(cityByLats.get(0).getCity());
 
             return result;
         }

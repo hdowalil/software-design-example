@@ -9,7 +9,6 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.gpsutils.LatLonUtils;
  * http://www.infoplease.com/ipa/A0001769.html
  * https://github.com/deremer/Cities/tree/master/countries
  *
- * Created by Herbert on 01.08.2015.
  */
 public class CityDistance implements Generator {
 

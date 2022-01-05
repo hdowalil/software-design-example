@@ -3,9 +3,6 @@ package info.fivecdesign.gamecollection.earthtrivia.backend.generators;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by Herbert on 24.08.2015.
- */
 public class Questions {
 
     private Date dateFor;

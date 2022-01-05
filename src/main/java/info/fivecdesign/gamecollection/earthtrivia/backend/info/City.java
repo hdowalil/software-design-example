@@ -3,9 +3,6 @@ package info.fivecdesign.gamecollection.earthtrivia.backend.info;
 
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
 
-/**
- * Created by Herbert on 27.07.2015.
- */
 public class City {
 
     String city;
