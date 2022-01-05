@@ -11,9 +11,6 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.info.CitiesContinents
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.City;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 
-/**
- * Created by Herbert on 27.07.2015.
- */
 public class CityNorth implements Generator {
 
     CitySelector cities = null;
@@ -42,7 +39,7 @@ public class CityNorth implements Generator {
             citySet.add(cities.next());
         }
 
-        List<City> cityByLats = kriterienErfuellt(citySet);
+        List<City> cityByLats = criteriaMet(citySet);
         if (cityByLats == null) {
             return null;
         } else {
@@ -59,7 +56,7 @@ public class CityNorth implements Generator {
         }
     }
 
-    private List<City> kriterienErfuellt (Set<City> citySet) {
+    private List<City> criteriaMet (Set<City> citySet) {
 
         List<City> cityBylats = new ArrayList<City>(4);
         cityBylats.addAll(citySet);

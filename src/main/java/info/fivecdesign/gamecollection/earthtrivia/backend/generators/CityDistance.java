@@ -1,8 +1,5 @@
 package info.fivecdesign.gamecollection.earthtrivia.backend.generators;
 
-import info.fivecdesign.gamecollection.earthtrivia.backend.gpsutils.LatLonPoint;
-import info.fivecdesign.gamecollection.earthtrivia.backend.gpsutils.LatLonUtils;
-
 /**
  *
  * https://en.wikipedia.org/wiki/Latitude_and_longitude_of_cities,_A-H
@@ -37,9 +34,10 @@ public class CityDistance implements Generator {
     public static void main(String[] args) {
         CityDistance dist = new CityDistance();
         System.out.println("Adelaide to Alice " + Integer.toString(dist.calculateDistance(34.55,138.53,23.42,133.53)));
-        LatLonPoint vienna = new LatLonPoint(48.12, 16.22);
-        LatLonPoint lisbon = new LatLonPoint(38.44, -9.08);
-        System.out.println("Vienna to Lisbon " + LatLonUtils.getQuickEstimate(vienna,lisbon));
+        System.out.println("Vienna to Lisbon my Algorithm " + Integer.toString(dist.calculateDistance(48.12,16.22,38.44,-9.08)));
+        //LatLonPoint vienna = new LatLonPoint(48.12, 16.22);
+        //LatLonPoint lisbon = new LatLonPoint(38.44, -9.08);
+        //System.out.println("Vienna to Lisbon " + LatLonUtils.getQuickEstimate(vienna,lisbon));
     }
 
 }
