@@ -66,6 +66,14 @@
 			<version>${junit.jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.tngtech.archunit</groupId>
+			<artifactId>archunit-junit5</artifactId>
+			<version>0.22.0</version>
+			<scope>test</scope>
+		</dependency>
+
 		<!-- Only required to run tests in an IDE that bundles an older version -->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
@@ -73,6 +81,7 @@
 			<version>${junit.platform.version}</version>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 </project>

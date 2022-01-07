@@ -11,7 +11,7 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.info.City;
  * will deliver cities based on the difficulty, call {@link #next()} method to iterate
  *
  */
-public class CitySelector {
+class CitySelector {
 
     // easy ... only easy cities from one continent, medium ... medium and easy cities from one continent, hard ... medium and easy from all continents
     private Difficulty difficulty;

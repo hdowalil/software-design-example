@@ -12,7 +12,7 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.info.Country;
  * will deliver countires based on the difficulty, call {@link #next()} method to iterate
  *
  */
-public class CountrySelector  {
+class CountrySelector  {
 
     private Difficulty difficulty;
     private Countries countries;
