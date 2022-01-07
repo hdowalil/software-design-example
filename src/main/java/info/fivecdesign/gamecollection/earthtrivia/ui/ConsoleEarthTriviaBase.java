@@ -10,9 +10,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 import info.fivecdesign.gamecollection.earthtrivia.backend.TriviaGenerator;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Question;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Questions;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.Difficulty;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaResources;
 import info.fivecdesign.gamecollection.portal.GameConsole;
 import info.fivecdesign.gamecollection.portal.Portal;

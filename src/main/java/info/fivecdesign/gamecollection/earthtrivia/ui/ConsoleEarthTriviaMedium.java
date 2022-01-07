@@ -1,6 +1,6 @@
 package info.fivecdesign.gamecollection.earthtrivia.ui;
 
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.Difficulty;
 
 public class ConsoleEarthTriviaMedium extends ConsoleEarthTriviaBase {
 

@@ -5,6 +5,7 @@ import java.util.Random;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Cities;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.CitiesContinents;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.City;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.Difficulty;
 
 /**
  * 

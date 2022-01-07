@@ -4,6 +4,7 @@ import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;
 
 import com.tngtech.archunit.core.domain.JavaClass;
 import com.tngtech.archunit.core.domain.JavaMethod;
+import com.tngtech.archunit.core.domain.JavaModifier;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchCondition;
@@ -18,30 +19,37 @@ import info.fivecdesign.gamecollection.portal.GameConsole;
 public class ArchUnitConventionsTests {
 
 	@ArchTest
-	public final static ArchRule generatorNamePrefix = classes().that().implement(Generator.class)
-						.should().haveSimpleNameStartingWith("Generator");
+	public final static ArchRule generatorNamePrefix = classes().that().implement(Generator.class).should()
+			.haveSimpleNameStartingWith("Generator");
 
 	@ArchTest
-	public final static ArchRule consoleNamePrefix = classes().that().implement(GameConsole.class)
-						.should().haveSimpleNameStartingWith("Console");
-	
-	private static ArchCondition<JavaClass> hasMethodNext =
-		    new ArchCondition<JavaClass>("has a method called next") {
-		        @Override
-		        public void check(JavaClass item, ConditionEvents events) {
-		    		boolean found = false;
-		    		for (JavaMethod method : item.getAllMethods()) {
-		    			if (method.getName().equals("next")) {
-		    				found = true;
-		    			}
-		    		}
-		    		if (!found) {
-		    			events.add(SimpleConditionEvent.violated(item, "Class does not have a next method!"));
-		    		}
-		        }
-		    };
-		    
+	public final static ArchRule consoleNamePrefix = classes().that().implement(GameConsole.class).should()
+			.haveSimpleNameStartingWith("Console");
+
 	@ArchTest
-	public final static ArchRule selectorsHaveNextMethod = classes().that().haveSimpleNameEndingWith("Selector").should(hasMethodNext);
+	public final static ArchRule abstractClassesHaveBaseSuffix = classes().that().haveModifier(JavaModifier.ABSTRACT)
+			.and().areNotInterfaces().should().haveSimpleNameEndingWith("Base");
+
+	/*
+	 * could also be done with "containanymethodsthat", but is done here as a custom rule for demo purpose
+	 */
+	private static ArchCondition<JavaClass> hasMethodNext = new ArchCondition<JavaClass>("has a method called next") {
+		@Override
+		public void check(JavaClass item, ConditionEvents events) {
+			boolean found = false;
+			for (JavaMethod method : item.getAllMethods()) {
+				if (method.getName().equals("next")) {
+					found = true;
+				}
+			}
+			if (!found) {
+				events.add(SimpleConditionEvent.violated(item, "Class does not have a next method!"));
+			}
+		}
+	};
+
+	@ArchTest
+	public final static ArchRule selectorsHaveNextMethod = classes().that().haveSimpleNameEndingWith("Selector")
+			.should(hasMethodNext);
 
 }

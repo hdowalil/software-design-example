@@ -6,6 +6,7 @@ import java.util.Set;
 
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Country;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.Difficulty;
 
 /**
  * 

@@ -13,6 +13,7 @@ import javax.annotation.Nullable;
 
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.CitiesContinents;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.City;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.Difficulty;
 
 /**
  *

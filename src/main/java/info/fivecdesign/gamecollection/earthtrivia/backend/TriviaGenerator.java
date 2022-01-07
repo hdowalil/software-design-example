@@ -9,15 +9,15 @@ import java.util.Random;
 
 import javax.annotation.Nonnull;
 
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.DidntMakeItException;
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Generator;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.GeneratorCapital;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.GeneratorCityDistance;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.GeneratorCityNorth;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.DidntMakeItException;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Generator;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.GeneratorNeighboringCountry;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Question;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Questions;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.Difficulty;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaResources;
 
 public class TriviaGenerator {

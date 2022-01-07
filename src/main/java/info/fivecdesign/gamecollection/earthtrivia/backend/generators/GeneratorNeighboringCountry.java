@@ -4,6 +4,7 @@ import java.util.Random;
 
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Country;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.Difficulty;
 
 public class GeneratorNeighboringCountry implements Generator {
 

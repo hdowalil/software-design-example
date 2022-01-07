@@ -10,6 +10,7 @@ import java.util.Set;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.CitiesContinents;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.City;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.Difficulty;
 
 public class GeneratorCityNorth implements Generator {
 

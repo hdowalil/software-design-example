@@ -1,8 +1,5 @@
 package info.fivecdesign.gamecollection.earthtrivia.backend.info;
 
-
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
-
 public class City {
 
     String city;
