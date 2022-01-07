@@ -9,20 +9,20 @@ import java.util.Map.Entry;
 import java.util.Random;
 import java.util.Scanner;
 
+import info.fivecdesign.gamecollection.earthtrivia.backend.TriviaGenerator;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Question;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Questions;
-import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaGenerator;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaResources;
 import info.fivecdesign.gamecollection.portal.GameConsole;
 import info.fivecdesign.gamecollection.portal.Portal;
 
-public abstract class EarthTriviaConsoleBase implements GameConsole {
+public abstract class ConsoleEarthTriviaBase implements GameConsole {
 
 	private Difficulty difficulty = null;
 	Random rnd = new Random(); 
 
-	protected EarthTriviaConsoleBase(Difficulty difficulty) {
+	protected ConsoleEarthTriviaBase(Difficulty difficulty) {
 		super();
 		this.difficulty = difficulty;
 	}

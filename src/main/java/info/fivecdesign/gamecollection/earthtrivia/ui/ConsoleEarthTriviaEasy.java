@@ -2,9 +2,9 @@ package info.fivecdesign.gamecollection.earthtrivia.ui;
 
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
 
-public class EarthTriviaEasyConsole extends EarthTriviaConsoleBase {
+public class ConsoleEarthTriviaEasy extends ConsoleEarthTriviaBase {
 
-	public EarthTriviaEasyConsole() {
+	public ConsoleEarthTriviaEasy() {
 		super(Difficulty.EASY);
 	}
 

@@ -10,9 +10,9 @@ import org.junit.jupiter.api.Test;
 
 import com.google.gson.Gson;
 
+import info.fivecdesign.gamecollection.earthtrivia.backend.TriviaGenerator;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.CityDistancePair;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Questions;
-import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaGenerator;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaResources;
 
 class EarthTriviaTests {

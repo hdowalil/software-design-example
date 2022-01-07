@@ -5,11 +5,11 @@ import java.util.Random;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Country;
 
-public class Capital implements Generator {
+public class GeneratorCapital implements Generator {
 
     CountrySelector selector = null;
 
-    public Capital(Difficulty difficulty, Countries countries, Random rnd) {
+    public GeneratorCapital(Difficulty difficulty, Countries countries, Random rnd) {
         selector = new CountrySelector(difficulty,rnd,countries);
     }
 

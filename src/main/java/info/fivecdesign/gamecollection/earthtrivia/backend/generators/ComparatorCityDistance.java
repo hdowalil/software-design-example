@@ -2,7 +2,7 @@ package info.fivecdesign.gamecollection.earthtrivia.backend.generators;
 
 import java.util.Comparator;
 
-public class CityDistanceComparator implements Comparator<CityDistancePair> {
+public class ComparatorCityDistance implements Comparator<CityDistancePair> {
 
 	@Override
 	public int compare(CityDistancePair o1, CityDistancePair o2) {

@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.CitiesContinents;
@@ -14,16 +16,13 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.info.City;
 
 /**
  *
- * https://en.wikipedia.org/wiki/Latitude_and_longitude_of_cities,_A-H
- * http://www.infoplease.com/ipa/A0001769.html
- * https://github.com/deremer/Cities/tree/master/countries
- *
+ * Will offer Questions with city-pairs asking which pair of cities are closest to each other
  */
-public class CityDistance implements Generator {
+public class GeneratorCityDistance implements Generator {
     
     CitySelector cities = null;
 
-    public CityDistance(Difficulty difficulty, CitiesContinents cities, Random rnd) {
+    public GeneratorCityDistance(Difficulty difficulty, CitiesContinents cities, Random rnd) {
         this.cities = new CitySelector(difficulty,rnd,cities);
     }
 
@@ -76,12 +75,17 @@ public class CityDistance implements Generator {
     /*
      * will return null in case the question is too easy or too hard
      */
-    private @Nullable List<CityDistancePair> criteriaMet (Set<CityDistancePair> cityPairSet) {
+    private @Nullable List<CityDistancePair> criteriaMet (@Nonnull Set<CityDistancePair> cityPairSet) {
 
+    	Objects.requireNonNull(cityPairSet);
+    	if (cityPairSet.size() == 0) {
+    		throw new IllegalArgumentException();
+    	}
+    	
         List<CityDistancePair> cityPairsByDistance= new ArrayList<CityDistancePair>(4);
         cityPairsByDistance.addAll(cityPairSet);
 
-        Collections.sort(cityPairsByDistance, new CityDistanceComparator());
+        Collections.sort(cityPairsByDistance, new ComparatorCityDistance());
 
         int diff = cityPairsByDistance.get(1).getDistanceInKilometers() - cityPairsByDistance.get(0).getDistanceInKilometers();
         

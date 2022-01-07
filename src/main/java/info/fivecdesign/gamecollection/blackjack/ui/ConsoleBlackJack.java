@@ -7,7 +7,7 @@ import info.fivecdesign.gamecollection.blackjack.backend.BlackJackGame;
 import info.fivecdesign.gamecollection.portal.GameConsole;
 import info.fivecdesign.gamecollection.portal.Portal;
 
-public class BlackJackConsole implements GameConsole {
+public class ConsoleBlackJack implements GameConsole {
 
 	@Override
 	public String getName() {
@@ -21,7 +21,7 @@ public class BlackJackConsole implements GameConsole {
 
 		while (game.getMoney() > 0) {
 
-			out.print(String.format("How much do you want to bet? (Max: %d or enter 0 to quit): ", game.getMoney()));
+			out.printf("How much do you want to bet? (Max: %d or enter 0 to quit): ", game.getMoney());
 
 			String entry = in.next();
 
@@ -49,8 +49,8 @@ public class BlackJackConsole implements GameConsole {
 
 		while (game.isGameRunning()) {
 
-			out.println(String.format("Dealer: %s", game.getVisibleDealerCardsAsString()));
-			out.println(String.format("Player: %s", game.getPlayerCardsAsString()));
+			out.printf("Dealer: %s%n", game.getVisibleDealerCardsAsString());
+			out.printf("Player: %s%n", game.getPlayerCardsAsString());
 
 			out.print("One more card (Y/N)?");
 
@@ -71,8 +71,8 @@ public class BlackJackConsole implements GameConsole {
 
 	private void displayBlackJackResult(PrintStream out, Scanner in, BlackJackGame game) {
 
-		out.println(String.format("Dealers Deck: %s", game.getVisibleDealerCardsAsString()));
-		out.println(String.format("Players Deck: %s", game.getPlayerCardsAsString()));
+		out.printf("Dealers Deck: %s%n", game.getVisibleDealerCardsAsString());
+		out.printf("Players Deck: %s%n", game.getPlayerCardsAsString());
 		if (game.isGameDraw()) {
 			out.println("Game is a draw!");
 		} else if (game.isGameWon()) {
@@ -80,7 +80,7 @@ public class BlackJackConsole implements GameConsole {
 		} else {
 			out.println("You lost this round!");
 		}
-		out.println(String.format("You have %d left!", game.getMoney()));
+		out.printf("You have %d left!%n", game.getMoney());
 
 	}
 

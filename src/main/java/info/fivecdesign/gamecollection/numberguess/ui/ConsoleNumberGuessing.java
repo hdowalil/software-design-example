@@ -8,7 +8,7 @@ import info.fivecdesign.gamecollection.numberguess.backend.NumberGuessingGame;
 import info.fivecdesign.gamecollection.portal.GameConsole;
 import info.fivecdesign.gamecollection.portal.Portal;
 
-public class NumberGuessingConsole implements GameConsole {
+public class ConsoleNumberGuessing implements GameConsole {
 
 	@Override
 	public String getName() {
@@ -24,8 +24,8 @@ public class NumberGuessingConsole implements GameConsole {
 		
 		while (!"0".equals(entry) && !game.isGameOver()) {
 			
-			out.println(String.format("Guess my number that is somewhere from 1 to 99. You have %d tries left!",game.getRoundsLeft()));
-			out.print("Enter your next guess, or 0 to quit:");
+			out.printf("Guess my number that is somewhere from 1 to 99. You have %d tries left!%n",game.getRoundsLeft());
+			out.printf("Enter your next guess, or 0 to quit:");
 			
 			do {
 				entry = in.next();

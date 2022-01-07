@@ -7,6 +7,11 @@ import java.util.Set;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Country;
 
+/**
+ * 
+ * will deliver countires based on the difficulty, call {@link #next()} method to iterate
+ *
+ */
 public class CountrySelector  {
 
     private Difficulty difficulty;

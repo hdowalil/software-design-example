@@ -1,5 +1,5 @@
 {"cities":[
-    {"city": "Torontoa", "diff": "EASY", "ctr": "CAN", "ll": "43.653226,-79.3831843"}
+    {"city": "Toronto", "diff": "EASY", "ctr": "CAN", "ll": "43.653226,-79.3831843"}
 ,{"city": "Montreal", "diff": "EASY", "ctr": "CAN", "ll": "45.5086699,-73.55399249999999"}
 ,{"city": "Vancouver", "diff": "EASY", "ctr": "CAN", "ll": "49.261226,-123.1139268"}
 ,{"city": "Ottawa", "diff": "MEDIUM", "ctr": "CAN", "ll": "45.4215296,-75.69719309999999"}

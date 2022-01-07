@@ -1,26 +1,25 @@
-package info.fivecdesign.gamecollection.earthtrivia.backend.info;
+package info.fivecdesign.gamecollection.earthtrivia.backend;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 import javax.annotation.Nonnull;
 
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Capital;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.CityDistance;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.CityNorth;
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.GeneratorCapital;
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.GeneratorCityDistance;
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.GeneratorCityNorth;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.DidntMakeItException;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Difficulty;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Generator;
-import info.fivecdesign.gamecollection.earthtrivia.backend.generators.NeighboringCountry;
+import info.fivecdesign.gamecollection.earthtrivia.backend.generators.GeneratorNeighboringCountry;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Question;
 import info.fivecdesign.gamecollection.earthtrivia.backend.generators.Questions;
+import info.fivecdesign.gamecollection.earthtrivia.backend.info.TriviaResources;
 
-/**
- * Created by Herbert on 27.07.2015.
- */
 public class TriviaGenerator {
 
     TriviaResources resources = null;
@@ -29,6 +28,16 @@ public class TriviaGenerator {
         this.resources = resources;
     }
 
+    /**
+     * questions are generated with the same random-seed for the same day.
+     * <br>
+     * so when running the game the same day you should get the same set of questions
+     * <br>
+     * running the game another day, you will get a new set of questions
+     * 
+     * @param datum
+     * @return
+     */
     public Questions generateQuestionsFor(Date datum) {
         Questions result = new Questions();
         result.setDateFor(datum);
@@ -38,9 +47,13 @@ public class TriviaGenerator {
         return result;
     }
 
-    public List<Question> generateQuestionsFor(@Nonnull Difficulty diff, @Nonnull Date datum) {
+    public List<Question> generateQuestionsFor(@Nonnull Difficulty diff, @Nonnull Date date) {
+    	
+    	Objects.requireNonNull(diff);
+    	Objects.requireNonNull(date);
+    	
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-        String rndInput = sdf.format(datum);
+        String rndInput = sdf.format(date);
         if (Difficulty.HARD.equals(diff)) {
             rndInput = rndInput+"3";
         } else if (Difficulty.MEDIUM.equals(diff)) {
@@ -48,7 +61,10 @@ public class TriviaGenerator {
         } else {
             rndInput = rndInput+"1";
         }
+        
+        // use a random seed specific for the current date
         Random rnd = new Random(Integer.valueOf(rndInput));
+        
         List<Question> result = new ArrayList<Question>(24);
         while (result.size() < 24) {
             Question q = null;
@@ -56,11 +72,14 @@ public class TriviaGenerator {
                 try {
                     q = generateQuestion(diff, rnd);
                 } catch (DidntMakeItException dmie) {
-                    // do nothing, continue
+                    // no probe, do nothing, continue
                 }
             }
             result.add(q);
         }
+        
+        assert result != null && result.size() > 0;
+        
         return result;
     }
 
@@ -68,10 +87,10 @@ public class TriviaGenerator {
         int questionType = rnd.nextInt(4);
         Generator questionGenerator = null;
         switch (questionType) {
-            case 0: questionGenerator = new Capital(diff, resources.getCountries(),rnd); break;
-            case 1: questionGenerator = new NeighboringCountry(diff, resources.getCountries(),rnd); break;
-            case 2: questionGenerator = new CityNorth(diff, resources.getCitiesContinents(), resources.getCountries(),rnd); break;
-            case 3: questionGenerator = new CityDistance(diff, resources.getCitiesContinents(), rnd); break;
+            case 0: questionGenerator = new GeneratorCapital(diff, resources.getCountries(),rnd); break;
+            case 1: questionGenerator = new GeneratorNeighboringCountry(diff, resources.getCountries(),rnd); break;
+            case 2: questionGenerator = new GeneratorCityNorth(diff, resources.getCitiesContinents(), resources.getCountries(),rnd); break;
+            case 3: questionGenerator = new GeneratorCityDistance(diff, resources.getCitiesContinents(), rnd); break;
         }
         return questionGenerator.generate();
     }

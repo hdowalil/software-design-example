@@ -1,5 +1,5 @@
-info.fivecdesign.gamecollection.blackjack.ui.BlackJackConsole
-info.fivecdesign.gamecollection.numberguess.ui.NumberGuessingConsole
-info.fivecdesign.gamecollection.earthtrivia.ui.EarthTriviaEasyConsole
-info.fivecdesign.gamecollection.earthtrivia.ui.EarthTriviaMediumConsole
-info.fivecdesign.gamecollection.earthtrivia.ui.EarthTriviaHardConsole
+info.fivecdesign.gamecollection.blackjack.ui.ConsoleBlackJack
+info.fivecdesign.gamecollection.numberguess.ui.ConsoleNumberGuessing
+info.fivecdesign.gamecollection.earthtrivia.ui.ConsoleEarthTriviaEasy
+info.fivecdesign.gamecollection.earthtrivia.ui.ConsoleEarthTriviaMedium
+info.fivecdesign.gamecollection.earthtrivia.ui.ConsoleEarthTriviaHard

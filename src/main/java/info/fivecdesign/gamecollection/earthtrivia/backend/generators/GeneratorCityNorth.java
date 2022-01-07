@@ -11,12 +11,12 @@ import info.fivecdesign.gamecollection.earthtrivia.backend.info.CitiesContinents
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.City;
 import info.fivecdesign.gamecollection.earthtrivia.backend.info.Countries;
 
-public class CityNorth implements Generator {
+public class GeneratorCityNorth implements Generator {
 
     CitySelector cities = null;
     CountrySelector countries = null;
 
-    public CityNorth(Difficulty difficulty, CitiesContinents cities, Countries countries, Random rnd) {
+    public GeneratorCityNorth(Difficulty difficulty, CitiesContinents cities, Countries countries, Random rnd) {
         this.countries = new CountrySelector(difficulty,rnd,countries);
         this.cities = new CitySelector(difficulty,rnd,cities);
     }
@@ -61,7 +61,7 @@ public class CityNorth implements Generator {
         List<City> cityBylats = new ArrayList<City>(4);
         cityBylats.addAll(citySet);
 
-        Collections.sort(cityBylats, new CityLatComparator());
+        Collections.sort(cityBylats, new ComparatorCityLat());
 
         double diff = cityBylats.get(3).getLatCoordinate() - cityBylats.get(2).getLatCoordinate();
         
