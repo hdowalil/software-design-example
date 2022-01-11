@@ -48,8 +48,8 @@ public class ArchUnitStructuralTests {
 	@DisplayName("UI Package in Slices should not be accessed by Backend Packages")
 	@Test
 	public void testUiBackendDependency() {
-		ArchRuleDefinition.noClasses().that().resideInAPackage("info.fivecdesign.gamecollection.*.backend").should()
-				.accessClassesThat().resideInAPackage("info.fivecdesign.gamecollection.*.ui").check(importedClasses);
+		ArchRuleDefinition.noClasses().that().resideInAPackage("info.fivecdesign.gamecollection.*.backend..").should()
+				.accessClassesThat().resideInAPackage("info.fivecdesign.gamecollection.*.ui..").check(importedClasses);
 	}
 
 }
